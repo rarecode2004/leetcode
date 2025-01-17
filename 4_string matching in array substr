@@ -36,16 +36,12 @@ class Solution {
             for(j=0;j<len;j++){
     
                 if(i!=j && words[i].contains(words[j])){
-                    if(q.contains(words[j])){
-                        q.add(null);
-                    }
-                    else{
+                    if(!q.contains(words[j])){
                         q.add(words[j]);
                     }
-                    
                      
                 }
-                q.remove(null);
+                
             }
       }
       
